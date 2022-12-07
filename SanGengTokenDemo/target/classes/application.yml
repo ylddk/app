@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sg_security?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.sangeng.domain
+server:
+  port: 8888
+#  main:
+#      allow-bean-definition-overriding: true
+#  redis:
+#      url: redis://123456@127.0.0.1:6379
+#      #Redis数据库索引(默认为0)
+#      database: 0
+#      #Redis服务器地址
+#      host: 127.0.0.1
+#      #Redis服务器连接端口
+#      port: 6379
+#      #Redis服务器连接账号密码(默认为空)
+#      username: root
+#      password: 123456
